@@ -1,46 +1,6 @@
-body {
-    margin: 0; /* Remove margin to prevent extra space around the edges */
-    background-color: #241b37; /* Your preferred background color */
-    font-family: 'Neue Machina', 'Noto Serif', sans-serif; /* Your preferred fonts */
-}
-
-/* General styles for reveal text */
 .reveal-text {
-    font-size: 50px;
-    color: white;
-    overflow: hidden;
-    position: relative;
-    display: inline-block;
-    white-space: nowrap; /* Prevents line breaks */
-    text-align: center; /* Centers text horizontally */
-}
-
-/* Center text reveal only on mobile devices */
-@media (max-width: 768px) {
-    .reveal-text {
-        font-size: 30px; /* Adjust font size for smaller screens */
-        margin: 0 auto; /* Centers text within its parent container */
-        display: flex;
-        justify-content: center;
-    }
-}
-
-.reveal-text::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #241b37; /* Background color for the reveal effect */
-    animation: reveal-animation 2s ease forwards; /* Animation properties */
-}
-
-@keyframes reveal-animation {
-    0% {
-        width: 100%;
-    }
-    100% {
-        width: 0%;
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
