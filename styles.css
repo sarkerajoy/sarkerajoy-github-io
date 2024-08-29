@@ -8,13 +8,12 @@
     font-style: normal;
 }
 
-
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Neue Machina', sans-serif;/* Use Noto Serif font */
+    font-family: 'Neue Machina', sans-serif;
 }
 
 /* Full-page introductory section styles */
@@ -26,11 +25,9 @@ html, body {
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     color: white; /* Text color */
-    position: absolute; /* Position it absolutely to cover the viewport */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure it is on top */
+    position: relative; /* Use relative positioning */
     overflow: hidden; /* Prevent scrolling during intro */
+    text-align: center; /* Center text alignment */
 }
 
 /* Slower minimalist zoom-in and fade-in animation */
@@ -53,9 +50,18 @@ html, body {
     }
 }
 
+.name-reveal {
+    display: flex; /* Flexbox layout for centering */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Full width to ensure centering */
+}
+
 .name-reveal h1 {
     font-size: 50px; /* Adjust font size */
     animation: textAppear 4s ease-in-out; /* Apply the animation */
+    margin: 0; /* Remove default margin */
+    display: inline-block; /* Prevent unwanted spacing */
 }
 
 /* Main content styles */
