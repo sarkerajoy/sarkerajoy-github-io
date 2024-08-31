@@ -2,8 +2,8 @@
 
 @font-face {
     font-family: 'Neue Machina';
-    src: url('../fonts/NeueMachina-Medium.woff2') format('woff2'),
-         url('../fonts/NeueMachina-Medium.woff') format('woff');
+    src: url('fonts/NeueMachina-Medium.woff2') format('woff2'),
+         url('fonts/NeueMachina-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
